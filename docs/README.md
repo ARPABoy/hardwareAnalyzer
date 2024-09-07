@@ -19,12 +19,12 @@ go build
 
 ## Screenshots:
 
-|                                       |                                             |
-|---------------------------------------|---------------------------------------------|
-| ![PERC](docs/images/PERC.png)         | ![SAS2IRCU](docs/images/SAS2IRCU.png)       |
-| ![SoftRaid](docs/images/SoftRaid.png) | ![ZFS](docs/images/ZFS.png)                 |
-| ![MegaRaid](docs/images/MegaRaid.png) | ![Btrfs](docs/images/Btrfs.png)             |
-| ![LVM](docs/images/LVM.png)           | ![MotherBoard](docs/images/MotherBoard.png) |
+|                                  |                                        |
+|----------------------------------|----------------------------------------|
+| ![PERC](images/PERC.png)         | ![SAS2IRCU](images/SAS2IRCU.png)       |
+| ![SoftRaid](images/SoftRaid.png) | ![ZFS](images/ZFS.png)                 |
+| ![MegaRaid](images/MegaRaid.png) | ![Btrfs](images/Btrfs.png)             |
+| ![LVM](images/LVM.png)           | ![MotherBoard](images/MotherBoard.png) |
 
 
 ---
