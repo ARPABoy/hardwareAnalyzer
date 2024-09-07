@@ -483,7 +483,3 @@ func main() {
 	utils.ShowGatheredData(controllers, pools, volumeGroups, raids, noRaidDisks)
 	fmt.Println("")
 }
-
-// Anyadir doc con comentarios al principio de cada package y antes de cada funcion
-// Package comments should begin with “Package” followed by the package name: Package mypackage enables widget management.
-// Function comments should begin with the name of the function they describe: MyFunction converts widgets to gizmos.
