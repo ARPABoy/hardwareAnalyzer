@@ -1,9 +1,9 @@
 #### hardwareAnalyzer: Linux Raid/disks configuration detection tool with auto contained disk tools.
 MegaRaid/PERC/SAS2IRCU/ADAPTEC/SoftRAID/ZFS/Btrfs/LVM/Disks Linux support.
 
-## Table of contents
+## Table of contents:
 - [Initial setup](#initial-setup)
-- [Screenshots]()
+- [Screenshots](#screenshots)
 - [CLI parameters](#cli-parameters)
 
 ---
@@ -29,7 +29,7 @@ go build
 
 ---
 
-## CLI parameters
+## CLI parameters:
 
 You can get available command line options via:
 ```
