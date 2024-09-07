@@ -1,43 +1,31 @@
-#### OVH-Cloudflare-GoDaddy-DonDominio NS/Whois search system.
-
-OVH-Cloudflare-GoDaddy-DonDominio NS/Whois search system with sqlite cache support.
+#### hardwareAnalyzer: Linux Raid/disks configuration detection tool with auto contained disk tools.
+MegaRaid/PERC/SAS2IRCU/ADAPTEC/SoftRAID/ZFS/Btrfs/LVM/Disks Linux support.
 
 ## Table of contents
-- [Initial configuration](#initial-configuration)
+- [Initial setup](#initial-setup)
+- [Screenshots]()
 - [CLI parameters](#cli-parameters)
 
 ---
 
-## Initial configuration:
-First step to be taken before program execution is to create creds directory with the following content:
-```
-mkdir configs
-```
+## Initial setup:
 
-***configs/cloudflare.list:***
 ```
-EMAIL:APIKEY
-```
-
-***configs/donDominio.list:***
-```
-NAME:ID:PASS
-```
-
-***configs/godaddy.list:***
-```
-NAME:KEY:SECRET:ID
-```
-
-***configs/ovh.list:***
-```
-NAME:KEY:SECRET:CONSUMER:ID
-```
-
-Then:
-```
+git clone https://github.com/ARPABoy/hardwareAnalyzer.git
 go mod tidy
+go build
+./hardwareAnalyzer
 ```
+
+## Screenshots:
+
+|                                       |                                             |
+|---------------------------------------|---------------------------------------------|
+| ![PERC](docs/images/PERC.png)         | ![SAS2IRCU](docs/images/SAS2IRCU.png)       |
+| ![SoftRaid](docs/images/SoftRaid.png) | ![ZFS](docs/images/ZFS.png)                 |
+| ![MegaRaid](docs/images/MegaRaid.png) | ![Btrfs](docs/images/Btrfs.png)             |
+| ![LVM](docs/images/LVM.png)           | ![MotherBoard](docs/images/MotherBoard.png) |
+
 
 ---
 
@@ -45,15 +33,13 @@ go mod tidy
 
 You can get available command line options via:
 ```
-go run domainSearcher.go -h
+go run hardwareAnalyzer.go -h
 ```
-
-Bear in mind that DonDominio requires IP authorization in order to query API service, so execute program from allowed systems only or you will get errors.
 
 Also you can check unitary tests running:
 ```
-go test
-go test -coverprofile=coverage.out && go tool cover -func=coverage.out
+go test ./...
+go test ./... -coverprofile=coverage.out && go tool cover -func=coverage.out
 ```
 
 ---
