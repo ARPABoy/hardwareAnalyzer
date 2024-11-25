@@ -12,6 +12,7 @@ MegaRaid/PERC/SAS2IRCU/ADAPTEC/SoftRAID/ZFS/Btrfs/LVM/Disks Linux support.
 
 ```
 git clone https://github.com/ARPABoy/hardwareAnalyzer.git
+cd hardwareAnalyzer
 go mod tidy
 go build
 ./hardwareAnalyzer
